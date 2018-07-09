@@ -7,7 +7,7 @@ from Baume1 import Baume
 import cv2
 import numpy as np
 #pip install -r requirments.txt
-#Farbdefinition
+#-------------------------------------------------------------------------------Farbdefinition-----------------------------------------------------------------------------------------
 COLOUR_BLACK = 0
 COLOUR_RED = 1
 COLOUR_GREEN = 2
@@ -20,7 +20,7 @@ A_BOLD = 1
 A_NORMAL = 2
 A_REVERSE = 3
 A_UNDERLINE = 4
-#DASENDE
+#-------------------------------------------------------------------------------DASENDE-----------------------------------------------------------------------------------------
 def ENDE(screen):
     while True:
         screen.centre("ENDE",14,COLOUR_WHITE)
@@ -52,7 +52,7 @@ def ENDE(screen):
             cv2.destroyAllWindows()
         screen.refresh()
 
-
+#-------------------------------------------------------------------------------Studi2-----------------------------------------------------------------------------------------
 def  STUDI2(screen):
     while True:
         screen.centre("STUDIENGÄNGE",14,COLOUR_WHITE)
@@ -70,7 +70,7 @@ def  STUDI2(screen):
             ENDE(screen)
         screen.refresh()
 
-
+#-------------------------------------------------------------------------------Studi-----------------------------------------------------------------------------------------
 def STUDI (screen):
     while True:
         screen.centre("STUDIUM",14,COLOUR_WHITE)
@@ -92,10 +92,11 @@ def STUDI (screen):
             ENDE(screen)
         screen.refresh()
 
-
+#-------------------------------------------------------------------------------Fisy2-----------------------------------------------------------------------------------------
 def FISY2(screen):
     while True:
-        screen.centre("http://www.xenuser.org/misc/erfahrungsbericht-ausbildung-zum-fachinformatiker-fur-systemintegration/",16,COLOUR_GREEN)
+        screen.centre("Wenn benötigt bitte abschreiben",15,COLOUR_WHITE)
+        screen.centre("http://www.xenuser.org/misc/erfahrungsbericht-ausbildung-zum-fachinformatiker-fur-systemintegration/",16,COLOUR_WHITE)
         screen.centre("Um weiter zu Machen Drücke F",17,COLOUR_GREEN)
         screen.refresh()
         ev=screen.get_key()
@@ -105,14 +106,14 @@ def FISY2(screen):
         elif ev in (ord("F"),ord("f")):
             screen.clear()
             STUDI(screen)
-
+#-------------------------------------------------------------------------------Fisy-----------------------------------------------------------------------------------------
 
 def FISY (screen):
     while True:
         screen.centre(" FACHHINFORMATIKER SYSTEMINTEGRATION" ,14,COLOUR_WHITE)
-        screen.centre("Der FachinforatikerSystemintegration betreut Systeme und Netzwerke, er konzipiert diese und hält sie instand bzw. installiert sie",16,COLOUR_WHITE)
+        screen.centre("Der FachinforatikerSystemintegration betreut Systeme und Netzwerke, er konzipiert diese und hält sie instand bzw. installiert sie.",16,COLOUR_WHITE)
         screen.centre("Um diese Ausbildung antreten zu können benötigt man einen FOR oder FORQ mit einem guten bis sehr guten Notdendurchschnitt.",17,COLOUR_WHITE)
-        screen.centre("Die Ausbildung dauert 3 Jahre und ist Dual. Der Betriebliche teil umfasst fachbezogene Schulungen und weiterbildungen.",18,COLOUR_WHITE)
+        screen.centre("Die Ausbildung dauert 3 Jahre und ist dual. Der Betriebliche teil umfasst fachbezogene Schulungen und weiterbildungen.",18,COLOUR_WHITE)
         screen.centre("Der Schulische teil umfasst Programmiersprachen und Mathematik, welche man auch im berufsleben oft benötigt.",19,COLOUR_WHITE)
         screen.centre("Möchtest du mehr Über den Beruf des FachinforatikerSystemintegration erfahren?",21,COLOUR_GREEN)
         screen.centre("Drücke J für Ja oder N für Nein",22,COLOUR_GREEN)
@@ -130,10 +131,10 @@ def FISY (screen):
 
     screen.refresh()
 
-
+#-------------------------------------------------------------------------------MeineTötigkeiten2-----------------------------------------------------------------------------------------
 def mm (screen):
     while True:
-        screen.centre("Meine ersten Tage waren sehr frustrierend, weil die eigen aneignung von,",17,COLOUR_WHITE)
+        screen.centre("Meine ersten Tage waren sehr frustrierend, weil die eigen aneignung von",17,COLOUR_WHITE)
         screen.centre("Programmiersprachen sehr anstregend und fehler behaftet ist.",18,COLOUR_WHITE)
         screen.centre("Wie Murphys law besagt, alles was schiefgehen kann wird schiefgehen!",19,COLOUR_WHITE)
         screen.centre("Um weiter zu machen Drücke F",21,COLOUR_GREEN)
@@ -148,7 +149,7 @@ def mm (screen):
 
     screen.refresh()
 
-
+#-------------------------------------------------------------------------------Firma2-----------------------------------------------------------------------------------------
 def Firma2 (screen):
     while True:
         screen.centre("Perfact.de",19,COLOUR_BLUE)
@@ -177,13 +178,13 @@ def Firma2 (screen):
             cv2.destroyAllWindows()
         screen.refresh()
 
-
+#-------------------------------------------------------------------------------Firma1----------------------------------------------------------------------------------------
 def Firma1 (screen):
     while True:
         screen.centre("PERFACT",14,COLOUR_WHITE)
         screen.centre("Die Firma Perfact Innovation wurde 1998 gegründet.",16,COLOUR_WHITE)
-        screen.centre("Sie beschäftigt mitlerweile 40 Angestellte,und hat Kunden wie Hapaq Loyd oder Spartherm.",17,COLOUR_WHITE)
-        screen.centre("Sie bildet FIAE und FISY aus. Die Atmosphere im Betrieb ist entspannt jedoch produktiv.",18,COLOUR_WHITE)
+        screen.centre("Sie beschäftigt inzwischen 40 Angestellte,und hat Kunden wie Hapaq Loyd oder Spartherm.",17,COLOUR_WHITE)
+        screen.centre("Sie bildet FIAE und FISY aus. Die Atmosphäre im Betrieb ist entspannt, jedoch produktiv.",18,COLOUR_WHITE)
         screen.centre("Alle projekte sind Opensource weshalb das allgemeine Betriebssystem Linux Ubuntu ist.",19,COLOUR_WHITE)
         screen.centre("Möchtest du noch mehr zur Firma wissen?",21,COLOUR_GREEN)
         screen.centre("Drücke J für Ja oder N für Nein",22,COLOUR_GREEN)
@@ -201,7 +202,7 @@ def Firma1 (screen):
 
     screen.refresh()
 
-
+#-------------------------------------------------------------------------------Mein-------------------------------------------------------------------------------------------
 def mein(screen):
     while True:
         screen.centre("MEINE TÄTIGKEITEN",14, COLOUR_WHITE)
@@ -239,12 +240,12 @@ def mein(screen):
 
     screen.refresh()
 
-
+#-------------------------------------------------------------------------------Intro-------------------------------------------------------------------------------------------
 def intro(screen):
     while True:
         screen.centre("INTRO",14,COLOUR_WHITE)
         screen.centre("Ich habe mein Praktikum in einem IT Dienstleistungs Betrieb durchgeführt.",16,COLOUR_WHITE)
-        screen.centre("Dieser betrieb trägt den Namen Perfact Innovation. Die Firma hat ihren Sitz in Herford an der Eupener Straße 32.",17,COLOUR_WHITE)
+        screen.centre("Dieser Betrieb trägt den Namen Perfact Innovation. Die Firma hat ihren Sitz in Herford an der Eupener Straße 32.",17,COLOUR_WHITE)
         screen.centre("In meinem Praktikum habe ich tiefe einblicke in die Berufe des",18,COLOUR_WHITE)
         screen.centre("FachinforatikerSystemintegration(FISY) und des FachinformtikerAnwednungsEntwicklung(FIAE) bekommen.",19,COLOUR_WHITE)
         screen.centre("Möchtest du mehr zur Firma wissen?",21,COLOUR_GREEN)
@@ -264,7 +265,7 @@ def intro(screen):
 
         screen.refresh()
 
-#DerAnfang
+#-------------------------------------------------------------------------------DerAnfang-------------------------------------------------------------------------------------
 def main(screen):
 
     while True:
